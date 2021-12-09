@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="home.css">   
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+
+<body>
+
+
+      <div class="container-fluid">
+
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo2.png" width="30" height="30" alt="" onclick="toggleNotifi()">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            
+            
+            
+          </ul>
+          <ul class="navbar-nav navbar-right">
+            <li class="px-lg-2 py-sm-2 nav-item"><img src="/images/notification.png" width="30" height="30" alt="" onclick="toggleNotifi()"></li>
+            <li class="px-lg-2 py-sm-2 nav-item active"><a class="nav-link"href="#"> Sign Up</a></li>
+            
+          </ul>
+        </div>
+
+        <!-- code for notification box -->
+
+        <div class="notifi-box" id="box">
+			<h2>Notifications <span>17</span></h2>
+			<div class="notifi-item">
+				<img src="/images/avatar1.png" alt="img">
+				<div class="text">
+				   <h4>Elias Abdurrahman</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="/images/avatar2.png" alt="img">
+				<div class="text">
+				   <h4>John Doe</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="/images/avatar3.png" alt="img">
+				<div class="text">
+				   <h4>Emad Ali</h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			<div class="notifi-item">
+				<img src="/images/avatar4.png" alt="img">
+				<div class="text">
+				   <h4>Ekram Abu </h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
+
+			
+
+		</div>
+
+
+
+
+
+
+      </nav>
+
+
+
+
+
+
+
+    <h1 id="heading">Parking Assistance</h1>
+    
+    <form class="form" id="myform">
+        <input type="file" id="inpfile">
+        <br>
+        <button type="submit">Upload File</button>
+    </form>
+    <img src="" width="200px" height="300px" id="car">
+    <script src="/javascript/home.js"></script>
+</div>
+</body>
+</html>
