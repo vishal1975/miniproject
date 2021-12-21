@@ -17,10 +17,10 @@
 <body>
 
 
-      <div class="container-fluid">
+      <div class="container-fluid bg-primary" id="container">
 
       
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="/images/logo2.png" width="30" height="30" alt="" onclick="toggleNotifi()">
             </a>
@@ -41,8 +41,8 @@
             
           </ul>
           <ul class="navbar-nav navbar-right">
-            <li class="px-lg-2 py-sm-2 nav-item"><img src="/images/notification.png" width="30" height="30" alt="" onclick="toggleNotifi()"></li>
-            <li class="px-lg-2 py-sm-2 nav-item active"><a class="nav-link"href="#"> Sign Up</a></li>
+            <li class="px-lg-2 py-sm-2 nav-item notify-logo"><img src="/images/notification.png" width="30" height="30" alt="" onclick="toggleNotifi()"></li>
+            <li class="px-lg-2 py-sm-2 nav-item active"><a class="nav-link"href="#"> Log Out</a></li>
             
           </ul>
         </div>
@@ -50,7 +50,7 @@
         <!-- code for notification box -->
 
         <div class="notifi-box" id="box">
-			<h2>Notifications <span>17</span></h2>
+			<h2>Notifications <span>5</span></h2>
 			<div class="notifi-item">
 				<img src="/images/avatar1.png" alt="img">
 				<div class="text">
@@ -83,7 +83,13 @@
 			    </div> 
 			</div>
 
-			
+			<div class="notifi-item">
+				<img src="/images/avatar5.png" alt="img">
+				<div class="text">
+				   <h4>Ekram Abu </h4>
+				   <p>@lorem ipsum dolor sit amet</p>
+			    </div> 
+			</div>
 
 		</div>
 
@@ -100,7 +106,7 @@
 
 
 
-    <h1 id="heading">Parking Assistance</h1>
+    <!-- <h1 id="heading">Parking Assistance</h1> -->
     
 
 <!-- main code -->
@@ -109,7 +115,8 @@
 
 
 
-<div class="area" >
+<div class="area bg-primary" >
+  <h1 id="heading" style="font-size: 3.5rem;" >Parking Assistance</h1>
   <ul class="circles">
           <li></li>
           <li></li>
@@ -157,7 +164,7 @@
 <div class="demo-content "></div>
 </div>
 <div class="col-md-4 col-xl-4 col-sm-8 text-right mt-2 content">
-<button type="submit" style="font-size: 150%;" class="btn btn-lg">Submit</button>
+<button type="submit" style="font-size: 150%;" class="btn btn-lg btn-warning" onclick="message_box()">Submit</button>
 </div>
 <div class="col-md-4 col-xl-4 col-sm-2 text-center">
 <div class="demo-content alt"></div>
@@ -190,13 +197,29 @@
 
 
 
-    <!-- <form class="form" id="myform">
-        <input type="file" id="inpfile">
-        <br>
-        <button type="submit">Upload File</button>
-    </form>
-    <img src="" width="200px" height="300px" id="car"> -->
-    <script src="/javascript/home.js"></script>
+   
 </div>
+
+
+
+<div class="message-box" id="message-box">
+  <div class="header">
+  <h2>Message Box</h2>
+  <img src="/images/close2.png" id="message-box-close" onclick="message_box_close()" width="20px" height="20px" alt="close symbol">
+  </div>
+ <div class="middle">
+  <textarea name="vishal" id="" cols="78" rows="13"  placeholder="Write Your Message Here"></textarea>
+ </div>
+ 
+ <div class="bottom">
+ 
+   <input type="button" id="send" onclick="message_box_close()" value="Send">
+ 
+ </div>
+</div>
+
+
+
+<script src="/javascript/home.js"></script>
 </body>
 </html>
